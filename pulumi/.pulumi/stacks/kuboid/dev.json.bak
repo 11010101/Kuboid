@@ -1,0 +1,40 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/kuboid/dev",
+        "latest": {
+            "manifest": {
+                "time": "2024-01-12T21:09:57.1518336Z",
+                "magic": "fa719a33d238b903a609a2a1893b37a181869f86d12e343da5913ce4b1f9fdfc",
+                "version": "v3.101.1"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:MWUayrUYAfM=:v1:2r/oqv6cFTGubcTQ:YnMj+78NhhjmVpVZFdGjbF4CSJ15CA=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::kuboid::pulumi:pulumi:Stack::kuboid-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-01-12T20:37:18.6004614Z",
+                    "modified": "2024-01-12T20:37:18.6004614Z"
+                }
+            ],
+            "pending_operations": [
+                {
+                    "resource": {
+                        "urn": "urn:pulumi:dev::kuboid::pulumi:pulumi:Stack::kuboid-dev",
+                        "custom": false,
+                        "type": "pulumi:pulumi:Stack",
+                        "created": "2024-01-12T20:37:18.6004614Z",
+                        "modified": "2024-01-12T20:37:18.6004614Z"
+                    },
+                    "type": "deleting"
+                }
+            ]
+        }
+    }
+}

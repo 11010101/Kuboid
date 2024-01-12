@@ -1,0 +1,32 @@
+{
+    "kind": "update",
+    "startTime": 1705091837,
+    "message": "init",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "Ash",
+        "git.author.email": "mrAMFarrar@gmail.com",
+        "git.committer": "Ash",
+        "git.committer.email": "mrAMFarrar@gmail.com",
+        "git.dirty": "true",
+        "git.head": "42a7dfdca0499645ed97befab5714d544187f3f2",
+        "git.headName": "refs/heads/main",
+        "pulumi.arch": "amd64",
+        "pulumi.os": "windows",
+        "pulumi.version": "v3.101.1",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "11010101",
+        "vcs.repo": "Kuboid",
+        "vcs.root": "pulumi"
+    },
+    "config": {
+        "aws:region": "eu-west-2"
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1705092001,
+    "resourceChanges": {
+        "create": 34
+    }
+}
