@@ -3,3 +3,4 @@ local.env
 *.env
 env.ps1
 /pulumi/.pulumi/
+/terraform/.terraform/
