@@ -1,12 +1,10 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
+# network variables
+
+variable "app_name" {
+  description = "name of the app for component naming"
 }
 
-provider "aws" {
-  region = "eu-west-2"
+variable "vpc_cidr_block" {
+  description = "cidr block for the vpc"
+  default = "192.168.0.0/20"
 }
