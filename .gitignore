@@ -3,4 +3,6 @@ local.env
 *.env
 env.ps1
 /pulumi/.pulumi/
-/terraform/.terraform/
+terraform/gcp/.terraform/
+terraform/azure/.terraform/
+terraform/aws/.terraform/
