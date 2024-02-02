@@ -1,7 +1,7 @@
-# aws network variables
+# aws root variables
 
 variable "app_name" {
-  description = "Name of app, used in: naming vpc components"
+  description = "Name of app, used in: naming vpc and components"
   type = string
 }
 

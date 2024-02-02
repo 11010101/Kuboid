@@ -1,4 +1,4 @@
-# network outputs
+# aws network outputs
 
 output "vpc_id" {
   description = "id of main vpc, created for: assigning components to vpc"

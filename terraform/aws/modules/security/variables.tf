@@ -1,4 +1,4 @@
-# security variables
+# aws security variables
 
 ##
 # constant local values
@@ -21,7 +21,7 @@ variable "vpc_id" {
   description = "id of main vpc, created for: assigning components to vpc"
   type = string
 }
-variable "vpc_name" {
-  description = "Name of VPC, created for: naming vpc components"
+variable "app_name" {
+  description = "Name of app, created for: naming vpc and components"
   type = string
 }

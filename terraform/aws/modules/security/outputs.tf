@@ -1,11 +1,6 @@
-# security outputs
+# aws security outputs
 
-output "security_group_load_balancer_id" {
-  description = "security group for load balancer, created for: assigning security rules to load balancer"
-  value = aws_security_group.load_balancer.id
-}
-
-output "security_group_api_instance_id" {
-    description = "security group for api instances, created for: assigning security rules to api instances"
-  value = aws_security_group.api_instance.id
+output "security_group_kubernetes_cluster_id" {
+  description = "security group for network access, created for: assigning security rules to ec2"
+  value = aws_security_group.kubernetes_cluster.id
 }

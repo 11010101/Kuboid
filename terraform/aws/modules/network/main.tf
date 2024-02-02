@@ -1,4 +1,4 @@
-# network main
+# aws network main
 
 resource "aws_vpc" "main" {
     cidr_block = var.vpc_cidr
@@ -6,7 +6,7 @@ resource "aws_vpc" "main" {
     enable_dns_hostnames = true
 
     tags = {
-      Name = "${var.vpc_name}-vpc"
+      Name = "${var.app_name}-vpc"
       ManagedBy = "Terraform"
     }
 }
@@ -24,7 +24,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "${var.vpc_name}-${var.availability_zones[count.index]}-public-subnet-${count.index + 1}"
+    Name = "${var.app_name}-${var.availability_zones[count.index]}-public-subnet-${count.index + 1}"
     ManagedBy = "Terraform"
   }
 }
@@ -38,7 +38,7 @@ resource "aws_subnet" "private" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "${var.vpc_name}-${var.availability_zones[count.index]}-private-subnet-${count.index + 1}"
+    Name = "${var.app_name}-${var.availability_zones[count.index]}-private-subnet-${count.index + 1}"
     ManagedBy = "Terraform"
   }
 }
@@ -47,7 +47,7 @@ resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name = "${var.vpc_name}-igw"
+    Name = "${var.app_name}-igw"
     ManagedBy = "Terraform"
   }
 }
@@ -59,7 +59,7 @@ resource "aws_route_table" "public" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name = "${var.vpc_name}-route-table"
+    Name = "${var.app_name}-route-table"
     ManagedBy = "Terraform"
   }
 }
